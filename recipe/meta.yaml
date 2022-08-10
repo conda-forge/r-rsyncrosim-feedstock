@@ -10,11 +10,11 @@ source:
   url:
     - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
-  sha256: efa50fa39db9b0c47eb2cffab0ee758233ef1484ba6f9180e8fe6aa8299d85e6
+  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
 
   rpaths:
