@@ -1,4 +1,4 @@
-{% set version = '1.4.3' %}
+{% set version = '1.4.4' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
-  sha256: 6da7220e2c3ca11806c48ee702eb8088a9f8d94bc5bc7bd81766aab2ee4a3bcf
+  sha256: a3ad549b95fd6357ef92bfb5b3b78763e9503bff635ed964feac7dfe5ec09929
 
 build:
   merge_build_host: True  # [win]
@@ -71,7 +71,7 @@ extra:
 # Package: rsyncrosim
 # Type: Package
 # Title: The R Interface to 'SyncroSim'
-# Version: 1.4.3
+# Version: 1.4.4
 # Authors@R: c( person("Colin", "Daniel", email = "colin.daniel@apexrms.com", role = c("aut", "cre")), person("Josie", "Hughes", email = "josie.hughes@canada.ca", role = "aut"), person("Valentin", "Lucet", role = "aut"), person("Alex", "Embrey", role = "aut"), person("Katie", "Birchard", role = "aut"), person("Leonardo", "Frid", role = "aut"), person("Tabitha", "Kennedy", role = "aut"), person("ApexRMS", role="cph"))
 # Description: 'SyncroSim' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>). 'rsyncrosim' provides an interface to 'SyncroSim'. Simulation models can be added to 'SyncroSim' in order to transform these datasets, taking advantage of general features such as defining scenarios of model inputs, running Monte Carlo simulations, and summarizing model outputs. 'rsyncrosim' requires 'SyncroSim' 2.3.5 or higher (API documentation: <https://docs.syncrosim.com/>).
 # License: MIT + file LICENSE
