@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
 
   rpaths:
@@ -28,11 +28,6 @@ requirements:
 
   host:
     - r-base
-    - r-dbi
-    - r-rsqlite
-    - r-gtools
-    - r-lifecycle
-    - r-raster
 
   run:
     - r-base
@@ -40,7 +35,7 @@ requirements:
     - r-rsqlite
     - r-gtools
     - r-lifecycle
-    - r-raster
+    - r-terra
 
 test:
   commands:
