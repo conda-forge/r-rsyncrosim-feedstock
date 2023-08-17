@@ -8,8 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-
-source:
   url:
     - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
