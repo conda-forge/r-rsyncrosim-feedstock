@@ -8,13 +8,14 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-
-  git_url: https://github.com/syncrosim/rsyncrosim
-  git_tag: 1.4.8
+  url:
+    - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
+    - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
+  sha256: c4160e03bb512629c91ab0525a09dae6989bb6856fba52301fc10301826fe714
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
 
   rpaths:
