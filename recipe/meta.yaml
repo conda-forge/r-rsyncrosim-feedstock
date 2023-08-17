@@ -80,7 +80,3 @@ about:
 # BugReports: https://github.com/syncrosim/rsyncrosim/issues/
 # Config/testthat/edition: 3
 # Roxygen: list(markdown = TRUE)
-
-# See
-# https://docs.conda.io/projects/conda-build for
-# more information about meta.yaml
