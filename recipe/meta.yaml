@@ -29,7 +29,7 @@ requirements:
     - {{ posix }}zip               # [win]
 
   host:
-    - r-base>=4.0
+    - r-base >=4.0
     - r-dbi
     - r-rsqlite
     - r-gtools
@@ -37,7 +37,7 @@ requirements:
     - r-terra
 
   run:
-    - r-base>=4.0
+    - r-base >=4.0
     - r-dbi
     - r-rsqlite
     - r-gtools
