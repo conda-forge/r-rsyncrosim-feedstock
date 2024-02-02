@@ -1,5 +1,4 @@
 {% set version = '1.5.0' %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -29,7 +28,7 @@ requirements:
     - {{ posix }}zip               # [win]
 
   host:
-    - r-base >=4.0
+    - r-base
     - r-dbi
     - r-rsqlite
     - r-gtools
@@ -37,7 +36,7 @@ requirements:
     - r-terra
 
   run:
-    - r-base >=4.0
+    - r-base
     - r-dbi
     - r-rsqlite
     - r-gtools
@@ -50,7 +49,7 @@ test:
     - "\"%R%\" -e \"library('rsyncrosim')\""  # [win]
 
 about:
-  home: <https://syncrosim.github.io/rsyncrosim/>
+  home: https://syncrosim.github.io/rsyncrosim/
   license: MIT
   summary: '''SyncroSim'' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>).
     ''rsyncrosim'' provides an interface to ''SyncroSim''. Simulation models can be
@@ -60,10 +59,11 @@ about:
     2.4.44 or higher (API documentation: <https://docs.syncrosim.com/>).'
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
   recipe-maintainers:
     - conda-forge/r
     - katieb1
+  
