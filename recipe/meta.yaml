@@ -1,4 +1,4 @@
-{% set version = '2.0.0' %}
+{% set version = '2.0.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
-  sha256: 880efd889e6b9aa32151967955313f28d17206189cdcdd0960f5948d84dd4cf0
+  sha256: a2a351d8b42270d296183238f1f9b89b9cbb9afbcbb9257f2a3752398025d97c
 
 build:
   merge_build_host: True  # [win]
@@ -32,7 +32,6 @@ requirements:
     - r-dbi
     - r-rsqlite
     - r-gtools
-    - r-lifecycle
     - r-terra
 
   run:
@@ -40,7 +39,6 @@ requirements:
     - r-dbi
     - r-rsqlite
     - r-gtools
-    - r-lifecycle
     - r-terra
 
 test:
