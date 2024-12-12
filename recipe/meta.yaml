@@ -1,5 +1,6 @@
 {% set version = '2.0.2' %}
 {% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rsyncrosim
@@ -12,7 +13,7 @@ source:
   sha256: 1df887819532aa51249cc227769b070d42cc045f91cb0c24ddd31d5c43737dad
 
 build:
-  number: 1
+  number: 2
   noarch: generic
 
   rpaths:
