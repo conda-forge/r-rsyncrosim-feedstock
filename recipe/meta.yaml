@@ -1,6 +1,6 @@
 {% set version = '2.0.2' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
+{% set github = 'https://github.com/syncrosim/rsyncrosim' %}
 
 package:
   name: r-rsyncrosim
@@ -8,14 +8,13 @@ package:
 
 source:
   url:
-    - https://github.com/syncrosim/rsyncrosim/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
-    - https://github.com/syncrosim/rsyncrosim/archive/v{{ version }}.tar.gz
+    - {{ github }}/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
+    - {{ github }}/archive/v{{ version }}.tar.gz
   sha256: 1df887819532aa51249cc227769b070d42cc045f91cb0c24ddd31d5c43737dad
 
 build:
   number: 3
   noarch: generic
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,14 +24,12 @@ requirements:
     - {{ posix }}filesystem        # [win]
     - {{ posix }}git
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
     - r-dbi
     - r-rsqlite
     - r-gtools
     - r-terra
-
   run:
     - r-base
     - r-dbi
@@ -47,6 +44,7 @@ test:
 
 about:
   home: https://syncrosim.github.io/rsyncrosim/
+  dev_url: {{ github }}
   license: MIT
   summary: '''SyncroSim'' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>).
     ''rsyncrosim'' provides an interface to ''SyncroSim''. Simulation models can be
