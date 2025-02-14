@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@katieb1](https://github.com/katieb1/)
 
-
-<!-- dummy commit to enable rerendering -->
-
