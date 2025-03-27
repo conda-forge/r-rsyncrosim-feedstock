@@ -1,4 +1,4 @@
-{% set version = '2.0.2' %}
+{% set version = '2.1.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set github = 'https://github.com/syncrosim/rsyncrosim' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ github }}/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - {{ github }}/archive/v{{ version }}.tar.gz
-  sha256: 1df887819532aa51249cc227769b070d42cc045f91cb0c24ddd31d5c43737dad
+  sha256: e49aa5a8bbb997d66698eaef73baf878274bb6fe31514214d88a8ddddb8c25f0
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -30,12 +30,14 @@ requirements:
     - r-rsqlite
     - r-gtools
     - r-terra
+    - r-processx
   run:
     - r-base
     - r-dbi
     - r-rsqlite
     - r-gtools
     - r-terra
+    - r-processx
 
 test:
   commands:
