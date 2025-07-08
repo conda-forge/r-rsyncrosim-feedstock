@@ -1,4 +1,4 @@
-{% set version = "2.1.4" %}
+{% set version = "2.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set github = "https://github.com/syncrosim/rsyncrosim" %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ github }}/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - {{ github }}/archive/v{{ version }}.tar.gz
-  sha256: 99c923a9d3ac9764845255328b814a01241686a72ef7bd8ebefaaf26a89d591b
+  sha256: 1cf37241db63af9dcb8419f36f0aa5cb510fc3d0167a2736bce2d562a66efb7b
 
 build:
   number: 0
@@ -48,8 +48,8 @@ about:
   home: https://syncrosim.github.io/rsyncrosim/
   dev_url: {{ github }}
   license: MIT
-  summary: '''SyncroSim'' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>). ''rsyncrosim'' provides an interface to ''SyncroSim''. Simulation models can be added to ''SyncroSim'' to transform these datasets, taking advantage of general features such as defining scenarios
-    of model inputs, running Monte Carlo simulations, and summarizing model outputs. ''rsyncrosim'' requires ''SyncroSim'' 3.0.00 or higher (API documentation: <https://docs.syncrosim.com/>).'
+  summary: '''SyncroSim'' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>). ''rsyncrosim'' provides an interface to ''SyncroSim''. Simulation models can be added to ''SyncroSim'' to transform these datasets, taking advantage of general features such as defining scenarios of model
+    inputs, running Monte Carlo simulations, and summarizing model outputs. ''rsyncrosim'' requires ''SyncroSim'' 3.0.00 or higher (API documentation: <https://docs.syncrosim.com/>).'
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
