@@ -7,7 +7,7 @@ Home: https://syncrosim.github.io/rsyncrosim/
 
 Package license: MIT
 
-Summary: 'SyncroSim' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>). 'rsyncrosim' provides an interface to 'SyncroSim'. Simulation models can be added to 'SyncroSim' in order to transform these datasets, taking advantage of general features such as defining scenarios of model inputs, running Monte Carlo simulations, and summarizing model outputs. 'rsyncrosim' requires 'SyncroSim' 3.0.00 or higher (API documentation: <https://docs.syncrosim.com/>).
+Summary: 'SyncroSim' is a generalized framework for managing scenario-based datasets (<https://syncrosim.com/>). 'rsyncrosim' provides an interface to 'SyncroSim'. Simulation models can be added to 'SyncroSim' to transform these datasets, taking advantage of general features such as defining scenarios of model inputs, running Monte Carlo simulations, and summarizing model outputs. 'rsyncrosim' requires 'SyncroSim' 3.0.00 or higher (API documentation: <https://docs.syncrosim.com/>).
 
 Development: https://github.com/syncrosim/rsyncrosim
 
