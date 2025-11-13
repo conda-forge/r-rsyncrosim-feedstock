@@ -1,4 +1,4 @@
-{% set version = "2.1.8" %}
+{% set version = "2.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set github = "https://github.com/syncrosim/rsyncrosim" %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ github }}/releases/download/{{ version }}/rsyncrosim_{{ version }}.tar.gz
     - {{ github }}/archive/v{{ version }}.tar.gz
-  sha256: 2e580aad8e74276650816523d9751c570ad28962c5b2d2d807472fd3464280e2
+  sha256: 3353bfba12c57a9f521a91283fb9a6494033148ac305db1afa30cb1fc944888d
 
 build:
   number: 0
