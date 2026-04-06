@@ -13,7 +13,7 @@ source:
   sha256: cb729312508d46583f7a42113c9560a60184278c7779029c9b5ae4520f86bc10
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -29,14 +29,12 @@ requirements:
     - r-dbi
     - r-rsqlite
     - r-gtools
-    - r-terra
     - r-processx
   run:
     - r-base
     - r-dbi
     - r-rsqlite
     - r-gtools
-    - r-terra
     - r-processx
 
 test:
